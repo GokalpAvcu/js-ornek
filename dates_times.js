@@ -68,3 +68,30 @@ console.log('saniye : '+ saniye);
 console.log('dakika :'+ dakika);
 console.log('saat :' + saat);
 console.log('gun : '+gun);
+
+
+// Her yıl mayıs ayının 2.haftası pazar günü kutlanan anneler günü 2019 yılında ne zaman kutlanacaktır ?
+
+var annelerGunu = new Date();
+annelerGunu.setHours(0,0,0,0);
+annelerGunu.setFullYear(2019);
+annelerGunu.setDate(1);
+annelerGunu.setMonth(4);
+
+while(annelerGunu.getDay() != 0){
+    annelerGunu.setDate(annelerGunu.getDate()+1)
+}
+annelerGunu.setDate(annelerGunu.getDate()+7);
+console.log(annelerGunu);
+
+// ** Yaş hesaplama nasıl yapılır ?
+
+var birthday = new Date('8/1/1985');
+var ageDifMs = Date.now() - birthday.getTime();
+var ageDate = new Date(ageDifMs);
+
+console.log(ageDate.getFullYear() - 1970);
+// console.log(birthday.getTime());
+// console.log(Date.now())
+
+
