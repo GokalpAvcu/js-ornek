@@ -119,49 +119,65 @@
 
 // ****************************
 
-// Ders 4 : Tür Dönüşümü
+// // Ders 4 : Tür Dönüşümü
+
+// let val;
+
+// // number to string
+
+// val = String(10);
+
+// // bool to string
+
+// val = String(true);
+
+// //date to string
+
+// val= String(new Date());
+
+// //array to string
+// val=String([1,2,3,4]);
+
+// // toString()
+
+// val=(10).toString();
+// val=(false).toString();
+
+// // String to number
+
+// val = Number("10");
+// val = Number(true);
+// val = Number(false);
+// val = Number(null);
+// val = Number("a");
+// val = Number([1,2,3,4]);
+
+// // parseInt
+// // parseFloat
+
+// val = parseInt("10");
+// val = parseInt("10.5");
+// val = parseFloat("10.5");
+
+
+
+
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.toFixed(2));
+
+// Template Literals
+
+const fullName = "Gökalp Avcu";
+const city= "Antalya";
+const yearOfBirth = 1999;
 
 let val;
 
-// number to string
+val ="my name is " +fullName+
+" I'm " +(2021-yearOfBirth)+" years old"+
+"and I live in "+city;
 
-val = String(10);
-
-// bool to string
-
-val = String(true);
-
-//date to string
-
-val= String(new Date());
-
-//array to string
-val=String([1,2,3,4]);
-
-// toString()
-
-val=(10).toString();
-val=(false).toString();
-
-// String to number
-
-val = Number("10");
-val = Number(true);
-val = Number(false);
-val = Number(null);
-val = Number("a");
-val = Number([1,2,3,4]);
-
-// parseInt
-// parseFloat
-
-val = parseInt("10");
-val = parseInt("10.5");
-val = parseFloat("10.5");
-
-
-
+val = `my name is ${fullName} I'm ${(2021-yearOfBirth>=18)?`over 18`: `under 18`} and I live in ${city}`;
 
 console.log(val);
-console.log(typeof val);
-console.log(val.toFixed(2));
