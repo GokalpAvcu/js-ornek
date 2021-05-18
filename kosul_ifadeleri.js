@@ -45,7 +45,7 @@ const school="university";
 // }
 
 
-// 2.DERSSSSSSSS!!!!!!!!------!!!!!!
+//*** */ 2.DERSSSSSSSS!!!!!!!!------!!!!!!
 
 // switch statements (koşullarımız çok fazlaysa switch yapısını kullanmak bize daha fazla fayda sağlar)
 
@@ -132,7 +132,7 @@ const school="university";
 //}
 
 
- //////20.04.2017 tarihinde trafiğe çıkan bir aracın servis bakım süreleri verilmiştir. Bu bilgilere göre servis uyarısını veriniz.
+ //////*** 20.04.2017 tarihinde trafiğe çıkan bir aracın servis bakım süreleri verilmiştir. Bu bilgilere göre servis uyarısını veriniz.
  //1.Bakım: 1 yıl 
  //2.Bakım: 2 yıl 
  //3.Bakım: 3 yıl
@@ -158,7 +158,7 @@ const school="university";
 
 
 
-////////// var result = prompt("who's here?");
+//////////**** */ var result = prompt("who's here?");
 
 // console.log(result);
 
@@ -182,54 +182,197 @@ const school="university";
 
 
 
-///// Object Literals
+/////** */ Object Literals
 
-let val;
+// let val;
 
-let person = {
-    firstName : 'Çınar',
-    lastName : 'Turan',
-    age : 7,
-    hobbies : ['music','game'],
-    address : {
-        city : 'Kocaeli',
-        country : 'Türkiye'
-    },
-    getBirthYear : function(){
-        return 2018- this.age;
-    }
-};
+// let person = {
+//     firstName : 'Çınar',
+//     lastName : 'Turan',
+//     age : 7,
+//     hobbies : ['music','game'],
+//     address : {
+//         city : 'Kocaeli',
+//         country : 'Türkiye'
+//     },
+//     getBirthYear : function(){
+//         return 2018- this.age;
+//     }
+// };
 
-val = person;
-val = person.firstName;
-val = person.lastName;
-val = person['firstName'];
-val = person.age;
-val = person.hobbies;
-val = person.hobbies[1];
-val = person.hobbies.length;
-val = person.address;
-val = person.address.city;
-val = person.address['city'];
-val = person.getBirthYear();
-
-
+// val = person;
+// val = person.firstName;
+// val = person.lastName;
+// val = person['firstName'];
+// val = person.age;
+// val = person.hobbies;
+// val = person.hobbies[1];
+// val = person.hobbies.length;
+// val = person.address;
+// val = person.address.city;
+// val = person.address['city'];
+// val = person.getBirthYear();
 
 
-let people = [
-                {firstName : 'Çınar',lastName:'Turan'},
-                {firstName : 'Sena',lastName:'Turan'},
-                {firstName : 'Seda',lastName:'Turan'}
-             ];
 
 
-val = people[2];
-val = people[2].firstName;
+// let people = [
+//                 {firstName : 'Çınar',lastName:'Turan'},
+//                 {firstName : 'Sena',lastName:'Turan'},
+//                 {firstName : 'Seda',lastName:'Turan'}
+//              ];
 
-for(let i =0; i<people.length;i++){
-    console.log(people[i].firstName);
-}
+
+// val = people[2];
+// val = people[2].firstName;
+
+// for(let i =0; i<people.length;i++){
+//     console.log(people[i].firstName);
+// }
 
 // console.log(val);
 // console.log(typeof people);
+
+
+
+/* 
+   Aşağıdaki object literal yapısını kullanarak en az 5 araç bilgisini tutunuz.
+   
+   Araç Bilgileri:
+
+      id : bmw116d_1234
+      model : 116d
+      yil : 2015
+      renk : white
+      servis kayitlari : 
+            id : bmw116d_1234_1 tarih : 30.01.2016 km : 13000 toplam ücret : 900
+               servis detayı:
+               id : 1 işlem : yağ değişimi ücret : 300
+               id : 2 işlem : filtre değişimi ücret: 300
+               id : 3 işlem : fren hidroliği ücret: 300
+            
+            id : bmw116d_1234_2 tarih : 10.01.2017 km : 28000 toplam ücret : 1800
+               id : 1 işlem : yağ değişimi ücret : 350
+               id : 2 işlem : filtre değişimi : 350
+               id : 3 işlem : fren hidroliği : 300
+               id : 3 işlem : balata değişimi : 800 
+
+*/
+
+
+var aracBilgileri = [
+  {
+      id : 'bmw116d_123',
+      model : 'bmw 116d',
+      yil : 2015,
+      renk : 'Beyaz',
+      servisKayitlari : [
+      {
+          id : 'bmw116d_123_1',
+          tarih : '20.01.2016',
+          km : '13000',
+          ucret : 900,
+          detay :[
+                  { id : 'bmw116d_123_1_1', aciklama :'yağ değişimi',ucret : 300},
+                  { id : 'bmw116d_123_1_2', aciklama :'filtre değişimi',ucret : 300},
+                  { id : 'bmw116d_123_1_3', aciklama : 'fren hidroliği',ucret : 300}
+                 ]
+          },
+          {
+              id : 'bmw116d_123_2',
+              tarih : '10.01.2017',
+              km : '28000',
+              ucret : 1800,
+              detay : [
+                      { id :'bmw116d_123_2_1',aciklama :'yağ değişimi', ucret:350},
+                      { id :'bmw116d_123_2_2',aciklama :'filtre',ucret:350 },
+                      { id : 'bmw116d_123_2_3',aciklama :'fren hidroliği',ucret:300},
+                      { id : 'bmw116d_123_2_3',aciklama : 'balata',ucret:800}
+              ]
+          }
+      ]
+  },
+  {
+      id : 'bmw118i_123',
+      model : 'bmw 118i',
+      yil : 2015,
+      renk : 'Beyaz',
+      servisKayitlari : [
+      {
+          id : 'bmw118i_123_1',
+          tarih : '20.01.2016',
+          km : '13000',
+          ucret : 900,
+          detay :[
+                  { id : 'bmw118i_123_1_1', aciklama :'yağ değişimi',ucret : 300},
+                  { id : 'bmw118i_123_1_2', aciklama :'filtre değişimi',ucret : 300},
+                  { id : 'bmw118i_123_1_3', aciklama : 'fren hidroliği',ucret : 300}
+                 ]
+          },
+          {
+              id : 'bmw116d_123_2',
+              tarih : '10.01.2017',
+              km : '28000',
+              ucret : 1800,
+              detay : [
+                      { id :'bmw116d_123_2_1',aciklama :'yağ değişimi', ucret:350},
+                      { id :'bmw116d_123_2_2',aciklama :'filtre',ucret:350 },
+                      { id : 'bmw116d_123_2_3',aciklama :'fren hidroliği',ucret:300},
+                      { id : 'bmw116d_123_2_3',aciklama : 'balata',ucret:800}
+              ]
+          }
+      ]
+  },
+  {
+      id : 'bmw320d_123',
+      model : 'bmw 320d',
+      yil : 2015,
+      renk : 'Beyaz',
+      servisKayitlari : [
+      {
+          id : 'bmw320d_123_1',
+          tarih : '20.01.2016',
+          km : '13000',
+          ucret : 900,
+          detay :[
+                  { id : 'bmw320d_123_1_1', aciklama :'yağ değişimi',ucret : 300},
+                  { id : 'bmw320d_123_1_2', aciklama :'filtre değişimi',ucret : 300},
+                  { id : 'bmw320d_123_1_3', aciklama : 'fren hidroliği',ucret : 300}
+                 ]
+          },
+          {
+              id : 'bmw116d_123_2',
+              tarih : '10.01.2017',
+              km : '28000',
+              ucret : 1800,
+              detay : [
+                      { id :'bmw116d_123_2_1',aciklama :'yağ değişimi', ucret:350},
+                      { id :'bmw116d_123_2_2',aciklama :'filtre',ucret:350 },
+                      { id : 'bmw116d_123_2_3',aciklama :'fren hidroliği',ucret:300},
+                      { id : 'bmw116d_123_2_3',aciklama : 'balata',ucret:800}
+              ]
+          }
+      ]
+  }
+];
+
+
+
+console.log(aracBilgileri[0]);
+console.log(aracBilgileri[0].id);
+console.log(aracBilgileri[0].model);
+console.log(aracBilgileri[0].renk);
+console.log(aracBilgileri[0].servisKayitlari);
+console.log(aracBilgileri[0].servisKayitlari[0]);
+
+console.log(aracBilgileri[0].servisKayitlari[0].km);
+console.log(aracBilgileri[0].servisKayitlari[0].ucret);
+console.log(aracBilgileri[0].servisKayitlari[0].detay[0].ucret);
+
+// console.log(aracBilgileri[1]);
+// console.log(aracBilgileri[2]);
+
+
+
+
 
