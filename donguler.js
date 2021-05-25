@@ -57,4 +57,11 @@
 // }
 // console.log(sonuc);
 
-
+let val="";
+for(let i=0; i<10; i++){
+    for(let j=0; j<8; j++){
+        val +="*"
+    }
+    val+="\n";
+}
+console.log(val);
