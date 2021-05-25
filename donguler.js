@@ -41,7 +41,20 @@
 // i++;
 // }while(i<10)
 
-for(let i=10;i>0;i--){
-    console.log(i);
 
-}
+// let toplam=0;
+// for(let i=10;i>0;i--){
+//     toplam+=i;
+// }
+
+// console.log(toplam);
+
+// let  sonuc=1;
+// for(let i=10;i>0;i--){ // 10 ile 1 arasında sadece çift sayıların çarpımı
+//     if(i%2==0){        // (i mod 2) 
+//         sonuc*=i;      // tek sayıları istiyorsak if(i%2==1) olarak yazarız
+//     }
+// }
+// console.log(sonuc);
+
+
