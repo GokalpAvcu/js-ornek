@@ -71,16 +71,48 @@
 
 // LOOPS İN ARRAY & OBJECTS
 
-// let cars =["Bmw", "Mercedes","Toyota"];
+ let cars =["Bmw", "Mercedes","Toyota"];
+ let people =[
+    {firstName:'Ada',lastName:'Bilgi'},
+    {firstName:'Yiğit',lastName:'Bilgi'},
+    {firstName:'Çınar',lastName:'Turan'}
+ ];
 
-// for(let i=0;i<cars.length;i++){
-//     console.log(cars[i]);
+///// ARRAYS
+
+//  for(let i=0;i<cars.length;i++){
+//  console.log(cars[i]);
+//  }
+
+//// OBJECTS
+
+// for (let i=0; i<people.length;i++){
+//     console.log(people[i].firstName);
 // }
 
 
-// for-in
+//// FOR-İN
 
-// for(let i in cars){
+//Arrays
+
+//  for(let i in cars){
 //     console.log(`index : ${i} value : ${cars[i]}`);
 // }
-// console.log(cars);
+//  console.log(cars);
+
+
+
+////Objects
+// for(let i in people){
+//     console.log(`index : ${i} value : ${people[i].firstName}`);
+// }
+
+
+
+
+
+//// FOREACH
+
+// cars.forEach(function(item){
+//       console.log(item);
+//   });
