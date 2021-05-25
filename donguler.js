@@ -57,11 +57,30 @@
 // }
 // console.log(sonuc);
 
-let val="";
-for(let i=0; i<10; i++){
-    for(let j=0; j<8; j++){
-        val +="*"
-    }
-    val+="\n";
-}
-console.log(val);
+// let val="";
+// for(let i=0; i<10; i++){
+//     for(let j=0; j<8; j++){
+//         val +="*"
+//     }
+//     val+="\n";
+// }
+// console.log(val);
+
+
+//----------------------------------------------------------------//
+
+// LOOPS İN ARRAY & OBJECTS
+
+// let cars =["Bmw", "Mercedes","Toyota"];
+
+// for(let i=0;i<cars.length;i++){
+//     console.log(cars[i]);
+// }
+
+
+// for-in
+
+// for(let i in cars){
+//     console.log(`index : ${i} value : ${cars[i]}`);
+// }
+// console.log(cars);
