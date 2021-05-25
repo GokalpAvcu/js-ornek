@@ -1,4 +1,4 @@
-// Loops
+// 1-LOOPS
 
 // for loop
 
@@ -18,3 +18,25 @@
 
 // }
 
+
+////// 2-WHİLE LOOP
+
+// for(let i=0; i<10; i++){
+//     console.log(i);
+// }
+
+// let i=0;
+// while(i<10){
+//     console.log(i);
+//     i++;
+
+// }
+
+
+// 3- DO-WHİLE LOOP
+
+let i=0;
+do{
+console.log(i);
+i++;
+}while(i<10)
