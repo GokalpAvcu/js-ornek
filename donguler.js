@@ -151,7 +151,7 @@
 */
 
 var hak = 5;
-var tahmin;
+var tahmin,sayac;
 var sayi = Math.floor((Math.random()*10));
 
 console.log(sayi);
