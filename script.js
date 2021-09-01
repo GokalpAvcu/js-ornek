@@ -28,4 +28,13 @@ var models = [
 
 
 
-]
+];
+
+var index = 4;
+
+
+document.querySelector('.card-title').textContent = models[index].name;
+
+document.querySelector('.card-img-top').setAttribute('src',models[index].image);
+
+document.querySelector('.card-link').setAttribute('href',models[index].link);
