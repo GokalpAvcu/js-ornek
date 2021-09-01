@@ -3,62 +3,49 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 
-    <link rel="stylesheet" href="style.css">
 
-    <title>My Task List</title>
+    <title>Hello, world!</title>
   </head>
   <body>
 
+   <div class="container mt-2">
+       <div class="row">
+           <div class="col-md-6">
 
-    <div class="container p-3">
-        <h1 class="app-title" id="header">to do App</h1>
-        <div class="card">
-            <div class="card-header">
-                New Task
-            </div>
-            <div class="card-body">
-                <form id="addTaskForm">
-                    <div class="input-group mt-3">
-
-                    
-                    <div class="input-group mt-3">    
-
-                    <input id="txtTaskName" name="taskName" type="text" class="form-control" placeholder="Type a new task" aria-describedby="btnAddNewTask">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="submit" id="btnAddNewTask">
-                            <i class="fas fa-plus"></i>
-                        </button>
-                    </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/bmw.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bmw 520d</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="card-link">Go somewhere</a>
                 </div>
-                </div> 
-                </form>
-            </div>
+                <div class="card-footer">
+                     
+                    <i class="fas fa-arrow-circle-left fa-2x"></i>
+                    <i class="fas fa-arrow-circle-right fa-2x"></i>
+                </div>
+              </div>
 
 
-        </div>
-        <div class="card mt-3">
-            <div class="card-header">
-                Task List
-                <a id="btnDeleteAll" href="#" class="btn btn-outline-danger btn-sm delete-all float-right">
-                    Delete All
-                </a>
-            </div>
-            <ul id="task-list" class="list-group">
+           </div>
+       </div>
+   </div>
 
-            </ul>
-        </div>
 
-    </div>
+
    
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
